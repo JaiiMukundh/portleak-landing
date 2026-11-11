@@ -132,20 +132,68 @@
   .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(7,13,24,.95);border-top:1px solid var(--line);padding:10px 14px;display:flex}
   .sticky .btn{width:100%}
   @media(min-width:760px){.sticky{display:none}}
+
+/* Conversion preview: static, self-contained, no build or remote assets. */
+:root{--bg:#f7f8fa;--panel:#fff;--panel2:#eef2f5;--line:#d6dfe4;--line2:#e3e8ec;--text:#152c38;--muted:#506572;--muted2:#5b6f7b;--amber:#b2f172;--amber2:#c4fa91;--green:#187443;--radius:18px;--radius-s:9px}
+body{font-family:Arial,Helvetica,sans-serif}.wrap{max-width:1200px;padding-left:32px;padding-right:32px}
+.top{background:#fff;border-bottom:1px solid #e2e8eb}.top-in{height:82px}.brand{font-size:22px;letter-spacing:-1px}.brand-mark{background:#183d42;color:#b2f172;width:35px;height:35px;border-radius:10px;font-size:13px;letter-spacing:-.5px}.top nav{gap:27px;font-weight:600;font-size:13px}.top nav a:hover{color:#225b45}.top .btn{background:#173e39;color:white;padding:12px 18px}
+.hero{background:#102f35;color:#fff;padding:70px 0 66px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:650px;height:650px;left:-340px;top:130px;border:1px solid #35565b;border-radius:50%;box-shadow:0 0 0 65px #ffffff03,0 0 0 130px #ffffff03;pointer-events:none}.hero-grid{position:relative;gap:60px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.17em;color:#426254}.hero .eyebrow{color:#b2f172}.hero h1{font-size:clamp(40px,4.8vw,61px);line-height:1.08;letter-spacing:-2.6px;margin-bottom:24px}.hero .sub{font-size:17px;color:#c4d4d7;line-height:1.75;max-width:490px}.hero .bullets{color:#d4e3e4;font-size:12px;gap:9px 16px}.hero .hero-note{color:#afc5ca;font-size:12px;margin-top:23px}.hero .btn-ghost{color:#e3eded;border-color:#537176}.btn{font-size:14px;padding:14px 20px;border-radius:7px}.btn-amber{color:#17372a}.hero .form-card{color:var(--text);background:white;border:0;padding:30px;box-shadow:0 20px 50px #00141740;border-radius:14px}.form-card h2{font-size:25px;letter-spacing:-.8px;margin:12px 0 8px}.form-card p{font-size:13px;line-height:1.65}.form-kicker{font-size:9px;letter-spacing:.14em;font-weight:700;color:#526b61;display:flex;align-items:center;gap:7px}.form-kicker span{width:6px;height:6px;background:#3e8b50;border-radius:50%}.field{margin-bottom:15px}.field label{color:#304b58;font-size:12px}.field input{background:#f8fafb;border-color:#d3dde3;color:#18323d;padding:12px;font-size:14px}.field input:focus{border-color:#387951;box-shadow:0 0 0 3px #38795120}.optional{background:transparent;border:0;padding:0;margin:0 0 20px}.optional summary{font-size:12px;font-weight:600;color:#486272}.optional summary span{font-weight:400;color:#657b86}.optional .field{margin-top:12px}.form-card .micro{font-size:10.5px;color:#5b6f7b;margin:12px 0 0}.micro a{color:#234c3d;text-decoration:underline}.success{color:#145b38;background:#ecf8ef}.error{font-size:13px;background:#fff0ed;color:#8b2920;padding:14px;border-radius:8px;margin-top:14px}.error a{text-decoration:underline}.btn:disabled{cursor:wait;opacity:.65}
+.trust{background:#eaf0ed;border-color:#dce5df}.trust-in{padding-top:21px;padding-bottom:21px;font-size:11px;gap:12px 18px}.trust span:before{color:#4b8151}section{padding:72px 0}.sec-head h2{font-size:34px;letter-spacing:-1px}.sec-head p{font-size:15px}.find-grid{grid-template-columns:repeat(3,1fr);gap:16px}.find{background:#f7f9fa;padding:23px 20px;min-height:135px;display:block;border:1px solid #e1e7ea;border-radius:10px}.find .n{display:block;color:#49765a;font-size:11px;margin-bottom:11px}.find b{font-size:15px;margin-bottom:6px}.find span{font-size:13px}.find:last-child{grid-column:span 2}.sample{background:#eaf1eb;border:1px solid #d6e3d7;padding:38px}.sample .money{color:#224e39;font-size:58px}.sample h2{font-size:24px;max-width:400px;margin:10px 0 16px}.sample p{font-size:14px}.bd{background:white;border-color:#d6e3d7;padding:22px}.bd .tot{color:#214935}.bd .keep{color:#216c43}.step{background:#f8fafb;padding:24px;border-color:#dfe7ea}.step .k{color:#457451}.step b{margin-top:15px}details{background:white;padding:19px 22px}summary{font-size:14px}.final{background:#153c3e;color:white;text-align:left;padding:42px;position:relative}.final h2{font-size:32px}.final p{color:#c2d8d7;font-size:15px;font-weight:400}.final .btn{background:#b2f172;color:#17372a}.final .btn:hover{background:#c4fa91}footer{background:#fff;color:#576e7a}.sticky{background:#fff;border-color:#d6dfe4;padding-bottom:max(10px,env(safe-area-inset-bottom))}.skip{position:fixed;left:16px;top:-100px;z-index:100;background:#fff;padding:12px;color:#173e39}.skip:focus{top:8px}:focus-visible{outline:3px solid #287747;outline-offset:4px}.hero :focus-visible{outline-color:#88c84c}#audit,section[id]{scroll-margin-top:105px}a,button,input,summary{touch-action:manipulation}
+@media(min-width:940px){.hero-grid{grid-template-columns:1.2fr 1fr}}
+@media(max-width:939px){.hero-grid{gap:35px}.hero h1{max-width:620px}.form-card{max-width:620px;width:100%}.hero{padding:44px 0}.find-grid{grid-template-columns:1fr 1fr}.find:last-child{grid-column:span 2}}
+@media(max-width:600px){.wrap{padding-left:20px;padding-right:20px}.top-in{height:68px}.brand{font-size:20px}.top .btn{font-size:12px;padding:10px 12px}.hero h1{font-size:42px;letter-spacing:-1.8px}.hero .form-card{padding:23px}.hero-actions{flex-direction:column;align-items:stretch}.hero .sub{font-size:16px}.find-grid{grid-template-columns:1fr}.find:last-child{grid-column:auto}.trust-in{display:grid;grid-template-columns:1fr 1fr;font-size:10px}.sec-head h2{font-size:28px}section{padding:48px 0}.sample{padding:24px}.sample .money{font-size:49px}.final{padding:28px}.final h2{font-size:27px}.final .btn{width:100%}.form-card h2{font-size:23px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+
+/* Editorial freight identity */
+:root{--bg:#f3f0e7;--panel:#f3f0e7;--panel2:#e8e6da;--text:#26382e;--muted:#596258;--muted2:#596258;--amber:#d64c27;--amber2:#b83a1a;--line:#c6c9b9;--line2:#d5d6c8}
+body{background:var(--bg);font-family:Arial,Helvetica,sans-serif}.wrap{max-width:1320px;padding-left:48px;padding-right:48px}.top{background:#f3f0e7;border-bottom:1px solid #c6c9b9;backdrop-filter:none}.top-in{height:91px}.brand{font-family:Georgia,serif;font-size:30px;font-weight:700;letter-spacing:-1.5px}.brand-mark{background:transparent;color:#d64c27;border:1px solid #d64c27;border-radius:0;width:28px;height:32px;font:12px monospace;transform:skewY(-9deg)}.top nav{font-size:12px;font-weight:400;gap:34px}.top .btn{background:transparent;color:#26382e;border:1px solid #26382e;border-radius:0;padding:11px 21px}.top .btn:hover{background:#26382e;color:#f3f0e7}
+.hero{background:#f3f0e7;color:#26382e;padding:58px 0 65px;overflow:hidden}.hero:before{display:none}.hero-grid{gap:35px;align-items:center}.hero .eyebrow,.eyebrow{font:10px/1.6 monospace;letter-spacing:.1em;color:#5d685a}.hero .eyebrow:before{content:"";display:inline-block;background:#d64c27;width:7px;height:7px;margin-right:10px}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(60px,6.7vw,92px);font-weight:400;letter-spacing:-5px;line-height:.99;margin:27px 0}.hero h1 em{font-style:italic;color:#d64c27;font-weight:400}.hero .sub{color:#596258;font-size:15px;line-height:1.85;max-width:410px;margin-top:25px}.hero .bullets{display:none}.hero-actions{margin-top:28px;gap:20px;align-items:center}.btn{border-radius:0;font-size:12px;font-weight:600;min-height:47px;padding:14px 21px}.btn-amber{background:#d64c27;color:white}.btn-amber:hover{background:#b83a1a}.hero .btn-ghost{border:0;border-bottom:1px solid #9aa18f;color:#354638;border-radius:0;padding:10px 0;min-height:35px}.hero .hero-note{font:10px/1.7 monospace;color:#66705e;margin-top:24px;max-width:390px}
+.cargo-scene{position:relative;padding:0 0 12px 20px}.scene-top{display:flex;justify-content:space-between;font:9px monospace;letter-spacing:.08em;color:#67705f;border-bottom:1px solid #bfc5b3;padding:0 0 15px}.port-art{width:100%;display:block;margin-top:12px}.invoice-slip{background:#fffcf3;max-width:380px;margin:-24px 0 0 auto;position:relative;padding:22px 25px;box-shadow:0 8px 12px #2433230d;transform:rotate(-3deg);border:1px solid #d6d7c7;border-top:3px solid #26382e}.slip-label{font:9px monospace;letter-spacing:.05em;display:flex;justify-content:space-between}.slip-label>span{color:#d64c27;font-size:18px}.slip-amount{display:flex;gap:18px;align-items:center;font:48px Georgia,serif;letter-spacing:-2px;padding:14px 0 18px}.slip-amount span{font:11px/1.5 Arial,sans-serif;letter-spacing:0;color:#65715e}.slip-bottom{border-top:1px dashed #bec5b2;padding-top:12px;display:flex;justify-content:space-between;gap:10px;font:9px monospace}.slip-bottom a{color:#a53920;text-decoration:underline}
+.trust{background:#e6e8dc;border:1px solid #c5cbb9;border-left:0;border-right:0}.trust-in{padding-top:20px;padding-bottom:20px;font:10px/1.6 monospace}.trust span:before{color:#d64c27}.trust b{font-weight:400}.sec-head{max-width:680px;margin-bottom:35px}.sec-head h2{font:46px/1.1 Georgia,serif;letter-spacing:-1.6px}.sec-head p{font-size:14px;max-width:490px;margin-top:15px}section{padding:80px 0}.find-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid #bfc5b3}.find{background:transparent;border:0;border-bottom:1px solid #bfc5b3;border-radius:0;padding:27px 30px 30px 0;min-height:155px}.find:last-child{grid-column:span 2}.find .n{font:11px monospace;color:#b6472c}.find b{font-size:16px;font-weight:500}.find span{font-size:13px;max-width:320px;display:block}
+#sample{background:#26382e;color:#f3f0e7;padding:68px 0}.sample{background:transparent;border:0;border-radius:0;padding:0;gap:75px}.sample .eyebrow{color:#b3c0a4}.sample .money{font:82px Georgia,serif;color:#eee6cd;letter-spacing:-4px}.sample h2{font:30px/1.2 Georgia,serif;max-width:380px}.sample p{color:#bec6b5;max-width:450px;font-size:13px}.bd{background:transparent;border:0;border-radius:0;border-top:1px solid #7a8871;padding:12px 0}.bd div{border-color:#4e6049;font:12px/1.8 monospace;padding:13px 0}.bd .tot,.bd .keep{color:#e0bd81}.step{background:transparent;border:0;border-radius:0;border-top:1px solid #afb7a3;padding:24px 26px 24px 0}.step .k{font:10px monospace;color:#ab4328}.step b{font:24px/1.2 Georgia,serif;font-weight:400;margin-bottom:14px}.step p{font-size:13px;line-height:1.8}.contact-section{background:#e4e7db;border-top:1px solid #c5cbb9;border-bottom:1px solid #c5cbb9}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.contact-copy h2{font:64px/1.04 Georgia,serif;font-weight:400;letter-spacing:-2px;margin:25px 0}.contact-copy h2 em{font-weight:400;color:#9c492e}.contact-copy>p:not(.eyebrow){font-size:14px;color:#596258;line-height:1.9}.contact-copy>a{font:12px monospace;text-decoration:underline;text-underline-offset:5px}.form-card{border:1px solid #b9c3af;background:#f7f5ed;border-radius:0;padding:32px;box-shadow:none}.form-card h2{font:31px Georgia,serif;font-weight:400;margin:18px 0 12px}.form-kicker{font:9px monospace;color:#65705c;letter-spacing:0}.form-kicker span{background:#d64c27;border-radius:0}.field input{border-radius:0;background:#fffcf5;border-color:#c2c9b6;color:#26382e}.field label{color:#42513a}.optional summary{color:#42513a}.form-card .micro{color:#57634e;line-height:1.7;font-size:11px}.form-card .btn{color:white}.optional{padding:0}.contact-grid .form-card{max-width:none}#faq .wrap{max-width:1000px!important}details{border:0;border-bottom:1px solid #c5cbb9;border-radius:0;background:transparent;padding:21px 0;margin:0}summary{font-size:15px;font-weight:400}details p{font-size:13px;max-width:650px}.final{background:transparent;color:#26382e;border-top:1px solid #bfc5b3;border-radius:0;padding:45px 0 0}.final h2{font:44px/1.1 Georgia,serif;letter-spacing:-1.4px}.final p{color:#596258;margin-top:15px;font-size:14px}.final .btn{background:#d64c27;color:white}.final .btn:hover{background:#b83a1a}footer{background:#e6e8dc;border-color:#c5cbb9;font:10px/1.8 monospace;color:#596258}.sticky{background:#f3f0e7}.sticky .btn{color:white}.hero :focus-visible{outline-color:#a53b1c}
+@media(min-width:940px){.hero-grid{grid-template-columns:1.05fr 1fr}}
+@media(max-width:939px){.hero-grid{grid-template-columns:1fr 1fr;gap:20px}.wrap{padding-left:28px;padding-right:28px}.hero h1{font-size:63px;letter-spacing:-3px}.hero .sub{font-size:13px}.hero-actions{gap:14px}.cargo-scene{padding-left:0}.slip-amount{font-size:37px;gap:10px}.invoice-slip{padding:17px}.slip-bottom{font-size:8px}.contact-grid{gap:35px}.contact-copy h2{font-size:53px}.sample{gap:35px}.find-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.wrap{padding-left:22px;padding-right:22px}.top-in{height:73px}.brand{font-size:27px}.top .btn{font-size:11px}.hero{padding:34px 0 40px}.hero-grid{grid-template-columns:1fr;gap:36px}.hero h1{font-size:70px;letter-spacing:-4px;margin:24px 0}.hero .sub{font-size:14px}.hero .eyebrow{font-size:8px}.hero-actions{flex-direction:row;flex-wrap:wrap;align-items:center;gap:18px}.hero-actions .btn{font-size:11px}.cargo-scene{max-width:430px;width:100%;margin:auto}.port-art{margin-top:0}.invoice-slip{max-width:290px;margin-top:-45px}.slip-amount{font-size:43px}.trust-in{font-size:9px;gap:14px}.sec-head h2{font-size:37px}.find-grid{grid-template-columns:1fr}.find:last-child{grid-column:auto}.find{min-height:0;padding:22px 0}.find .n{margin-bottom:7px}.sample{gap:25px}.sample .money{font-size:69px}.sample h2{font-size:28px}.contact-grid{grid-template-columns:1fr;gap:35px}.contact-copy h2{font-size:54px}.form-card{padding:23px}.form-card h2{font-size:28px}.form-kicker{font-size:8px}.final h2{font-size:36px}section{padding:55px 0}.steps{gap:0}}
+@media(max-width:350px){.hero h1{font-size:59px}.hero-actions{gap:12px}.hero-actions .btn{padding:12px}.hero .eyebrow{letter-spacing:0}.slip-amount{font-size:38px}}
+
+
+/* Alignment pass: shared column tracks, flush edges and consistent vertical rhythm. */
+.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.hero-grid>div:first-child{padding-top:44px}.cargo-scene{padding:0;min-width:0}.scene-top{min-height:30px;align-items:center;padding-bottom:14px}.port-art{margin:20px 0 0}.invoice-slip{transform:none;max-width:none;width:100%;margin:10px 0 0;padding:22px 26px;box-shadow:0 5px 14px #24332306}.slip-amount{justify-content:space-between;padding:13px 0 19px}.slip-amount span{text-align:right}.slip-bottom{font-size:10px;align-items:center}.hero-actions{align-items:center}.hero .btn-ghost{min-height:47px;display:inline-flex;align-items:center}.trust-in{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}.trust span{white-space:nowrap}
+.find-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;border-top:0}.find{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;padding:25px 0;min-height:132px;border-top:1px solid #bfc5b3;border-bottom:0}.find .n{line-height:24px;margin:0}.find b{line-height:24px;margin-bottom:7px}.find span{max-width:440px}.find:last-child{grid-column:1/-1;border-bottom:1px solid #bfc5b3;min-height:115px}.find:last-child span{max-width:none}
+.sample,.contact-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}.sample{padding:0}.sample .eyebrow{margin-bottom:18px}.bd{margin:0;padding:0}.bd div{min-height:49px;align-items:center;gap:20px}.bd div span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}.steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}.step{padding:24px 0 0;display:grid;grid-template-rows:18px 58px auto;gap:16px;align-content:start}.step b,.step p{margin:0}.step b{font-size:23px;line-height:1.25}.contact-copy{padding-top:1px}.contact-copy .eyebrow{margin:0}.contact-copy h2{margin-top:24px}.form-card{padding:32px}.form-card h2{margin-top:18px}.field input{height:46px}.form-card .optional{padding:0 0 18px;margin-bottom:18px}.form-card .micro{text-align:left}#faq .wrap{max-width:1320px!important}#faq .sec-head{margin-bottom:28px}#faq details{max-width:none}.final{padding-top:36px}
+@media(max-width:1100px){.hero-grid,.sample,.contact-grid{gap:36px}.hero h1{font-size:clamp(59px,6.4vw,78px)}.trust-in{font-size:9px;gap:12px}.steps{gap:24px}.step b{font-size:21px}}
+@media(max-width:800px){.hero-grid{gap:24px}.hero-grid>div:first-child{padding-top:16px}.hero h1{font-size:57px;letter-spacing:-3px}.invoice-slip{padding:18px}.slip-bottom{font-size:8px}.slip-amount{font-size:37px}.trust-in{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.steps{grid-template-columns:1fr;gap:26px}.step{grid-template-rows:auto auto auto;gap:12px}.step b{font-size:24px}.contact-grid{gap:28px}.form-card{padding:24px}.contact-copy h2{font-size:48px}}
+@media(max-width:650px){.hero-grid,.sample,.contact-grid{grid-template-columns:minmax(0,1fr);gap:36px}.hero-grid>div:first-child{padding-top:0}.hero h1{font-size:70px;letter-spacing:-4px}.cargo-scene{max-width:none}.port-art{margin-top:10px}.invoice-slip{margin-top:8px;padding:20px}.slip-amount{font-size:44px}.slip-bottom{font-size:9px}.trust-in{grid-template-columns:repeat(2,minmax(0,1fr));font-size:9px;gap:14px 10px}.trust span{white-space:normal}.find-grid{grid-template-columns:minmax(0,1fr);gap:0}.find{min-height:0;padding:22px 0;grid-template-columns:24px minmax(0,1fr);gap:12px}.find:last-child{grid-column:auto;min-height:0}.sample{gap:30px}.contact-copy h2{font-size:54px}.form-card{padding:24px}.final .btn{width:auto}#faq .wrap{padding-left:22px;padding-right:22px}}
+@media(max-width:350px){.hero h1{font-size:59px}.slip-amount{font-size:38px}.slip-bottom{font-size:8px}.form-card{padding:20px}.form-card h2{font-size:26px}}
+
+
+/* Custom PL monogram: a container-cut P paired with an L return. */
+.top .brand{gap:13px;align-items:center;text-decoration:none;flex-shrink:0}
+.brand-symbol{display:block;width:39px;height:41px;flex:none}
+.brand-wordmark{display:block;font-family:Georgia,serif;font-size:30px;font-weight:700;letter-spacing:-1.25px;line-height:1}
+.brand-descriptor{display:block;margin-top:7px;font-family:Arial,Helvetica,sans-serif;font-size:7px;font-weight:500;letter-spacing:1.7px;line-height:1.2;color:#596258}
+@media(max-width:650px){.top .brand{gap:9px}.brand-symbol{width:32px;height:34px}.brand-wordmark{font-size:25px}.brand-descriptor{font-size:5.8px;letter-spacing:1.35px;margin-top:6px}}
+
+.brand-logo{display:block;width:200px;height:48px;object-fit:contain}
+@media(max-width:650px){.brand-logo{width:158px;height:38px}}
 </style>
+<link rel="icon" type="image/svg+xml" href="assets/portleak-mark.svg">
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 
 <header class="top">
   <div class="wrap top-in">
-    <a class="brand" href="#top"><span class="brand-mark">PL</span>PortLeak</a>
-    <nav>
+    <a class="brand" href="#top" aria-label="PortLeak home"><img class="brand-logo" src="assets/portleak-logo.svg" alt="PortLeak" width="200" height="48"></a>
+    <nav aria-label="Main navigation">
       <a href="#how">How it works</a>
       <a href="#findings">What we find</a>
       <a href="#sample">Sample</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-amber" href="#audit">Get free audit</a>
+    <a class="btn btn-amber" href="#audit">Let’s talk ↗</a>
   </div>
 </header>
 
@@ -153,66 +201,35 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Detention &amp; demurrage audit</p>
-        <h1>We recover the money <em>leaking</em> out of your containers</h1>
-        <p class="sub">Free 12-month audit. We find the overcharges; you pay 20% of what we recover. Nothing found, nothing owed.</p>
+        <p class="eyebrow">DETENTION / DEMURRAGE / RECOVERY</p>
+        <h1>Cargo moves.<br><em>Overcharges</em><br>stay behind.</h1>
+        <p class="sub">You paid to move your goods. Not to cover billing mistakes.<br>We find detention and demurrage overcharges — and help you get your money back.</p>
         <ul class="bullets">
-          <li>72-hour findings</li>
+          <li>Free initial audit</li>
           <li>No ERP access</li>
-          <li>NDA before you share</li>
+          <li>NDA available before sharing</li>
         </ul>
         <div class="hero-actions">
-          <a class="btn btn-amber" href="#audit">Get my free audit</a>
+          <a class="btn btn-amber" href="#audit">Request an audit</a>
           <a class="btn btn-ghost" href="#sample">See a sample finding</a>
         </div>
-        <p class="hero-note">12-month lookback · 46 CFR Part 541 checks · Pay only on recovery</p>
+        <p class="hero-note">For importers, freight forwarders &amp; CHAs · No upfront fee</p>
       </div>
 
-      <div class="form-card" id="audit">
-        <h2>Get your free audit</h2>
-        <p>Send 12 months of D&amp;D invoices. We'll return a dollar figure in 72 hours.</p>
-        <form id="lead-form" novalidate>
-          <div class="field">
-            <label for="email">Work email *</label>
-            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" />
-          </div>
-          <div class="row2">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" />
-            </div>
-            <div class="field">
-              <label for="company">Company *</label>
-              <input id="company" name="company" type="text" required autocomplete="organization" placeholder="Acme Imports" />
-            </div>
-          </div>
-          <div class="row2">
-            <div class="field">
-              <label for="teu">TEU / year</label>
-              <select id="teu" name="teu">
-                <option>Under 500</option>
-                <option selected>500–2,000</option>
-                <option>2,000–5,000</option>
-                <option>5,000+</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="ports">Main ports</label>
-              <input id="ports" name="ports" type="text" placeholder="LA/LB, NY/NJ" />
-            </div>
-          </div>
-          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <button class="btn btn-amber btn-block" type="submit">Get my free audit</button>
-          <p class="micro">No upfront fee · NDA before you share · No obligation · <a href="mailto:portleak.audit@gmail.com" style="color:var(--muted);text-decoration:underline">email us directly</a></p>
-          <div class="success" id="success">Thanks — we've got it. We'll reply from portleak.audit@gmail.com within one business day.</div>
-        </form>
+      <div class="cargo-scene" aria-label="Illustrated shipping containers and an example invoice review">
+        <div class="scene-top"><span>THE COST OF STANDING STILL</span><span>FIELD NOTES / 001</span></div>
+        <svg class="port-art" viewBox="0 0 600 475" role="img" aria-label="Three shipping containers drawn on a consistent perspective grid, with two stacked flush">
+<path d="M45 404H565M72 58V404M72 58H452L510 105H72M104 58V105M164 58L215 105M225 58L276 105M286 58L337 105M347 58L398 105M408 58L459 105M475 105V153" fill="none" stroke="#9ca68f" stroke-width="1"/>
+<path d="M65 365L334 421L563 327L295 272Z" fill="#26382e" opacity=".10"/>
+<polygon points="153.4,225.6 422.2,281.6 510.6,232.2 241.8,176.2" fill="#c5ccb8" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polygon points="422.2,371.6 510.6,322.2 510.6,232.2 422.2,281.6" fill="#738671" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polygon points="153.4,315.6 422.2,371.6 422.2,281.6 153.4,225.6" fill="#a9b59c" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polyline points="164.9,313.0 164.9,233.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="179.3,316.0 179.3,236.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="193.7,319.0 193.7,239.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="208.1,322.0 208.1,242.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="222.5,325.0 222.5,245.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="236.9,328.0 236.9,248.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="251.3,331.0 251.3,251.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="265.7,334.0 265.7,254.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="280.1,337.0 280.1,257.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="294.5,340.0 294.5,260.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="308.9,343.0 308.9,263.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="323.3,346.0 323.3,266.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="337.7,349.0 337.7,269.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="352.1,352.0 352.1,272.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="366.5,355.0 366.5,275.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="380.9,358.0 380.9,278.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="395.3,361.0 395.3,281.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="409.7,364.0 409.7,284.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="430.4,362.0 430.4,282.0" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="441.2,356.0 441.2,276.0" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="452.1,349.9 452.1,269.9" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="463.0,343.8 463.0,263.8" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="473.9,337.7 473.9,257.7" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="484.8,331.6 484.8,251.6" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="495.6,325.6 495.6,245.6" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="506.5,319.5 506.5,239.5" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><text x="172.60000000000002" y="279.1" transform="rotate(11.77 172.60000000000002 279.1)" fill="#344638" font-size="11" font-family="monospace">PL / 002</text><polygon points="153.4,135.6 422.2,191.6 510.6,142.2 241.8,86.2" fill="#ef8a62" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polygon points="422.2,281.6 510.6,232.2 510.6,142.2 422.2,191.6" fill="#a74529" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polygon points="153.4,225.6 422.2,281.6 422.2,191.6 153.4,135.6" fill="#d9633d" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polyline points="164.9,223.0 164.9,143.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="179.3,226.0 179.3,146.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="193.7,229.0 193.7,149.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="208.1,232.0 208.1,152.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="222.5,235.0 222.5,155.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="236.9,238.0 236.9,158.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="251.3,241.0 251.3,161.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="265.7,244.0 265.7,164.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="280.1,247.0 280.1,167.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="294.5,250.0 294.5,170.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="308.9,253.0 308.9,173.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="323.3,256.0 323.3,176.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="337.7,259.0 337.7,179.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="352.1,262.0 352.1,182.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="366.5,265.0 366.5,185.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="380.9,268.0 380.9,188.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="395.3,271.0 395.3,191.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="409.7,274.0 409.7,194.0" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="430.4,272.0 430.4,192.0" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="441.2,266.0 441.2,186.0" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="452.1,259.9 452.1,179.9" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="463.0,253.8 463.0,173.8" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="473.9,247.7 473.9,167.7" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="484.8,241.6 484.8,161.6" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="495.6,235.6 495.6,155.6" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="506.5,229.5 506.5,149.5" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><text x="172.60000000000002" y="189.10000000000002" transform="rotate(11.77 172.60000000000002 189.10000000000002)" fill="#fff3dc" font-size="11" font-family="monospace">PORTLEAK / 001</text><polygon points="65.0,275.0 333.8,331.0 422.2,281.6 153.4,225.6" fill="#f1e9d6" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polygon points="333.8,421.0 422.2,371.6 422.2,281.6 333.8,331.0" fill="#aaa58b" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polygon points="65.0,365.0 333.8,421.0 333.8,331.0 65.0,275.0" fill="#e6dcc3" stroke="#354638" stroke-width="1.2" stroke-linejoin="round"/><polyline points="76.5,362.4 76.5,282.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="90.9,365.4 90.9,285.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="105.3,368.4 105.3,288.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="119.7,371.4 119.7,291.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="134.1,374.4 134.1,294.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="148.5,377.4 148.5,297.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="162.9,380.4 162.9,300.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="177.3,383.4 177.3,303.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="191.7,386.4 191.7,306.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="206.1,389.4 206.1,309.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="220.5,392.4 220.5,312.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="234.9,395.4 234.9,315.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="249.3,398.4 249.3,318.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="263.7,401.4 263.7,321.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="278.1,404.4 278.1,324.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="292.5,407.4 292.5,327.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="306.9,410.4 306.9,330.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="321.3,413.4 321.3,333.4" fill="none" stroke="#24392d" stroke-opacity=".22" stroke-width="2"/><polyline points="342.0,411.4 342.0,331.4" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="352.8,405.4 352.8,325.4" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="363.7,399.3 363.7,319.3" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="374.6,393.2 374.6,313.2" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="385.5,387.1 385.5,307.1" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="396.4,381.0 396.4,301.0" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="407.2,375.0 407.2,295.0" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><polyline points="418.1,368.9 418.1,288.9" fill="none" stroke="#fff8dc" stroke-opacity=".18" stroke-width="1.5"/><text x="84.2" y="328.5" transform="rotate(11.77 84.2 328.5)" fill="#344638" font-size="11" font-family="monospace">HANDLE WITH CARE</text><path d="M45 441H565" stroke="#a1aa95" stroke-dasharray="2 5"/><text x="45" y="464" fill="#64725c" font-size="9" font-family="monospace">IN TRANSIT ≠ ON THE CLOCK</text></svg>
+        <div class="invoice-slip"><div class="slip-label">EXAMPLE AUDIT / 14 CONTAINERS <span>↗</span></div><div class="slip-amount">$18,400<span>in potential<br>overcharges</span></div><div class="slip-bottom"><span>Check the paperwork.</span><a href="#sample">View breakdown ↗</a></div></div>
       </div>
     </div>
   </section>
 
   <div class="trust">
     <div class="wrap trust-in">
-      <span><b>46 CFR Part 541</b> checks built in</span>
+      <span><b>Invoice-by-invoice</b> review</span>
       <span><b>12-month</b> lookback</span>
       <span><b>No</b> ERP or integration</span>
       <span><b>NDA</b> before you share</span>
@@ -220,56 +237,18 @@
     </div>
   </div>
 
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>Estimate your exposure in 10 seconds</h2>
-        <p>Move the sliders. If the number is small, you're fine. If it's not, the audit will find the exact figure.</p>
-      </div>
-      <div class="estimate">
-        <div>
-          <div class="est-field">
-            <label>Containers per year (TEU) <b id="teu-val">1,200</b></label>
-            <input id="est-teu" type="range" min="100" max="10000" step="100" value="1200" />
-          </div>
-          <div class="est-field">
-            <label>Share that incurs D&amp;D <b id="pct-val">12%</b></label>
-            <input id="est-pct" type="range" min="2" max="30" step="1" value="12" />
-          </div>
-          <div class="est-field">
-            <label>Average D&amp;D per container <b id="rate-val">$150</b></label>
-            <select id="est-rate">
-              <option value="75">$75</option>
-              <option value="150" selected>$150</option>
-              <option value="300">$300</option>
-              <option value="500">$500</option>
-            </select>
-          </div>
-        </div>
-        <div class="est-out">
-          <div class="lbl">Estimated D&amp;D spend</div>
-          <div class="big" id="est-spend">$21,600</div>
-          <div class="lbl" style="margin-top:14px">Likely recoverable (15–25%)</div>
-          <div class="big" id="est-range">$3,240–$5,400</div>
-          <a class="btn btn-amber btn-block" href="#audit" id="est-cta" style="margin-top:16px">Get the exact number</a>
-          <p class="fine">Estimate only. The audit is exact — and free.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="findings" style="background:var(--panel)">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Five places carriers leak money</h2>
-        <p>One line per pattern. Every finding comes with the timestamp, rule, and dollar amount.</p>
+        <h2>The charges hiding in plain sight.</h2>
+        <p>We look for charges that don’t line up with your records and applicable terms.</p>
       </div>
       <div class="find-grid">
         <div class="find"><span class="n">01</span><div><b>Wrong free time</b><span>Measured from the wrong event, or fewer days than the tariff allows.</span></div></div>
         <div class="find"><span class="n">02</span><div><b>Wrong charge start</b><span>The clock starts before the container is available.</span></div></div>
-        <div class="find"><span class="n">03</span><div><b>Missed hold waivers</b><span>Customs or terminal hold days that should not count.</span></div></div>
+        <div class="find"><span class="n">03</span><div><b>Missed hold waivers</b><span>Hold days that may qualify for a waiver under your terms.</span></div></div>
         <div class="find"><span class="n">04</span><div><b>Double-billed storage</b><span>Terminal and carrier charging the same container-days.</span></div></div>
-        <div class="find"><span class="n">05</span><div><b>Post-gate-out detention</b><span>The empty left, but the billing clock kept running.</span></div></div>
+        <div class="find"><span class="n">05</span><div><b>Charges after empty return</b><span>The empty container was returned, but charges continued.</span></div></div>
       </div>
     </div>
   </section>
@@ -278,18 +257,18 @@
     <div class="wrap">
       <div class="sample">
         <div>
-          <p class="eyebrow">Sample finding</p>
+          <p class="eyebrow">Illustrative audit</p>
           <div class="money">$18,400</div>
-          <h2>recovered on 14 containers</h2>
-          <p>All invoices were paid. Six disputes later, the carrier credits cleared — the client kept 80%. Illustrative result; details withheld.</p>
+          <h2>in potential overcharges across 14 containers</h2>
+          <p>An example of how findings are broken down — not a client result or a promise of recovery. Each disputed charge needs supporting records and carrier review.</p>
         </div>
         <div class="bd">
           <div><span>Detention</span><span>$9,850</span></div>
           <div><span>Demurrage</span><span>$5,400</span></div>
           <div><span>Storage</span><span>$3,150</span></div>
-          <div class="tot"><span>Total recovered</span><span>$18,400</span></div>
+          <div class="tot"><span>Potential overcharges</span><span>$18,400</span></div>
           <div><span>Fee (20%)</span><span>$3,680</span></div>
-          <div class="keep"><span>Client keeps</span><span>$14,720</span></div>
+          <div class="keep"><span>Net if fully recovered</span><span>$14,720</span></div>
         </div>
       </div>
     </div>
@@ -299,24 +278,46 @@
     <div class="wrap">
       <div class="sec-head">
         <h2>Three steps. No integration.</h2>
-        <p>You already have the invoices. That's all we need.</p>
+        <p>Start with a request. We’ll confirm the records needed before you share files.</p>
       </div>
       <div class="steps">
-        <div class="step"><span class="k">Step 01</span><b>Send 12 months of invoices</b><p>PDFs, spreadsheets, or carrier statements. No ERP access. No IT project.</p></div>
+        <div class="step"><span class="k">Step 01</span><b>Share your billing records</b><p>After the initial conversation, share invoices and available shipment records. An NDA is available.</p></div>
         <div class="step"><span class="k">Step 02</span><b>We rebuild the clock</b><p>Free time, holds, gate-out dates — every charge checked against the tariff.</p></div>
-        <div class="step"><span class="k">Step 03</span><b>Approve. We dispute. You pay 20%.</b><p>Carrier-ready packets, tracked to credit. No retainer. No hourly billing.</p></div>
+        <div class="step"><span class="k">Step 03</span><b>Review the findings. Choose what’s next.</b><p>Approve the recovery terms and dispute packet before proceeding. Fees apply only after recovery.</p></div>
       </div>
     </div>
   </section>
 
+  <section class="contact-section"><div class="wrap contact-grid"><div class="contact-copy"><p class="eyebrow">LESS PAPERWORK. MORE CLARITY.</p><h2>You handle<br>the cargo.<br><em>We’ll check<br>the charges.</em></h2><p>No software to install. No upfront fee.<br>Just a closer look at what you’ve already paid.</p><a href="mailto:portleak.audit@gmail.com">portleak.audit@gmail.com ↗</a></div>      <div class="form-card" id="audit">
+        <div class="form-kicker"><span></span> YOUR NEXT SHIPMENT CAN WAIT. THIS SHOULDN’T.</div><h2>Let’s look at the numbers.</h2>
+        <p>Tell us where to reach you. We’ll help you identify what to share next — no invoices needed today.</p>
+        <form id="lead-form">
+          <div class="field">
+            <label for="email">Work email *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" />
+          </div>
+          <div class="field">
+            <label for="company">Company *</label>
+            <input id="company" name="company" required autocomplete="organization" placeholder="Your company name" maxlength="160" />
+          </div>
+          <details class="optional"><summary>Add shipment details <span>(optional)</span></summary>
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" maxlength="160" /></div>
+            <div class="field"><label for="ports">Main ports or carriers</label><input id="ports" name="ports" placeholder="e.g. JNPT, Mundra, LA / Long Beach" maxlength="300" /></div>
+          </details>
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button class="btn btn-amber btn-block" type="submit">Request an audit</button>
+          <p class="micro">Free audit. Recovery fee: 20%, with a $2,500 minimum, payable only on recovery. Terms agreed before recovery work.</p><p class="micro">Your contact details go to PortLeak via FormSubmit to respond to this request. Prefer email? <a href="mailto:portleak.audit@gmail.com">Contact Jaii directly ↗</a></p>
+          <div class="success" id="success" role="status" tabindex="-1"></div><div class="error" id="error" role="alert" hidden>We couldn’t confirm delivery. Your details are still here. Please retry or <a id="email-fallback" href="mailto:portleak.audit@gmail.com">send your request by email</a>.</div><noscript><p>Please <a href="mailto:portleak.audit@gmail.com">email your audit request</a>; this form needs JavaScript.</p></noscript>
+        </form>
+      </div></div></section>
   <section id="faq">
     <div class="wrap" style="max-width:820px">
       <div class="sec-head"><h2>Questions, answered</h2></div>
-      <details open><summary>What do you need from me?</summary><p>12 months of D&amp;D invoices and container numbers. PDFs or CSV. No ERP access.</p></details>
-      <details><summary>How long does it take?</summary><p>First findings in 3 business days. We file the disputes and track each to credit.</p></details>
+      <details open><summary>What do you need from me?</summary><p>Start with your email and company. For the audit, we’ll request invoices, container numbers, and available tariff and event records. No ERP access needed.</p></details>
+      <details><summary>How long does it take?</summary><p>We aim to provide initial findings within 3 business days of receiving complete records. Carrier dispute and recovery timelines vary.</p></details>
       <details><summary>What if you find nothing?</summary><p>You pay nothing. You still get a summary of what we checked.</p></details>
-      <details><summary>How do you get paid?</summary><p>20% of recovered dollars, after the carrier credit is confirmed. $2,500 minimum.</p></details>
-      <details><summary>Is my data safe?</summary><p>NDA before you share. Files encrypted, access limited, deleted on request.</p></details>
+      <details><summary>How do you get paid?</summary><p>The audit is free. Recovery work carries a 20% success fee with a $2,500 minimum, payable only after recovery. We agree the fee and scope with you before proceeding, including how the minimum affects smaller claims.</p></details>
+      <details><summary>Is my data safe?</summary><p>Ask for an NDA before sharing invoices. Contact us to agree how documents will be transferred and handled. Please don’t send sensitive documents through the enquiry form.</p></details>
     </div>
   </section>
 
@@ -324,8 +325,8 @@
     <div class="wrap">
       <div class="final">
         <h2>Find out what your invoices are hiding</h2>
-        <p>Free 12-month audit. A dollar figure in 72 hours. Nothing found, nothing owed.</p>
-        <a class="btn btn-amber" href="#audit">Get my free audit</a>
+        <p>Start with two details. No invoice upload. No upfront fee.</p>
+        <a class="btn btn-amber" href="#audit">Request an audit</a>
       </div>
     </div>
   </section>
@@ -338,49 +339,37 @@
   </div>
 </footer>
 
-<div class="sticky"><a class="btn btn-amber" href="#audit">Get my free audit</a></div>
+<div class="sticky"><a class="btn btn-amber" href="#audit">Request an audit</a></div>
 
 <script>
 (function(){
-  var form=document.getElementById('lead-form'), success=document.getElementById('success');
+  const form=document.getElementById('lead-form');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(entries=>{document.querySelector('.sticky').style.visibility=entries[0].isIntersecting?'hidden':'visible';}).observe(document.getElementById('audit'));
+  }
+  const success=document.getElementById('success');
+  const error=document.getElementById('error');
   form.addEventListener('submit',async function(e){
     e.preventDefault();
-    if(form._honey.value) return;
-    var data=Object.fromEntries(new FormData(form).entries());
-    var btn=form.querySelector('button[type=submit]');
-    btn.disabled=true; btn.textContent='Sending…';
-    var payload=Object.assign({},data,{_subject:'PortLeak free audit request',_template:'table',_captcha:'false'});
-    var ctrl=new AbortController(); var timer=setTimeout(function(){ctrl.abort()},8000);
+    if(!form.reportValidity() || form.elements._honey.value) return;
+    const data=Object.fromEntries(new FormData(form).entries());
+    if(!data.company.trim()){form.elements.company.setCustomValidity('Please enter your company name.');form.elements.company.reportValidity();return;}
+    const btn=form.querySelector('button[type=submit]');
+    if(btn.disabled) return;
+    error.hidden=true;success.style.display='none';btn.disabled=true;btn.textContent='Sending your request…';form.setAttribute('aria-busy','true');
+    const body='Company: '+data.company+'\nEmail: '+data.email+'\nName: '+(data.name||'')+'\nPorts or carriers: '+(data.ports||'');
+    document.getElementById('email-fallback').href='mailto:portleak.audit@gmail.com?subject='+encodeURIComponent('Free D&D audit request')+'&body='+encodeURIComponent(body);
+    const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),10000);
     try{
-      var r=await fetch('https://formsubmit.co/ajax/portleak.audit@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),signal:ctrl.signal});
-      var json={}; try{json=await r.json()}catch(e){}
-      if(!r.ok || String(json.success)!=='true') throw new Error(json.message||'formsubmit');
-      success.textContent="Thanks — we've got it. We'll reply from portleak.audit@gmail.com within one business day.";
-      success.style.display='block'; form.reset();
-    }catch(err){
-      var body='Name: '+(data.name||'')+'\nEmail: '+(data.email||'')+'\nCompany: '+(data.company||'')+'\nTEU/year: '+(data.teu||'')+'\nPorts: '+(data.ports||'');
-      window.location.href='mailto:portleak.audit@gmail.com?subject='+encodeURIComponent('Free D&D audit request')+'&body='+encodeURIComponent(body);
-      success.textContent='Could not submit automatically — your email app should open. If not, email portleak.audit@gmail.com directly.';
-      success.style.display='block';
-    }finally{clearTimeout(timer)}
-    btn.disabled=false; btn.textContent='Get my free audit';
+      const response=await fetch('https://formsubmit.co/ajax/portleak.audit@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({...data,_subject:'PortLeak free audit request',_template:'table'}),signal:controller.signal});
+      const result=await response.json();
+      if(!response.ok || !(result.success===true || result.success==='true')) throw new Error('Delivery unconfirmed');
+      success.textContent='Your request was submitted. Look out for a reply from portleak.audit@gmail.com. No need to send invoices yet.';
+      success.style.display='block';form.reset();success.focus();
+    }catch(err){error.hidden=false;}
+    finally{clearTimeout(timer);btn.disabled=false;btn.textContent='Request an audit';form.removeAttribute('aria-busy');}
   });
-
-  var t=document.getElementById('est-teu'), p=document.getElementById('est-pct'), r=document.getElementById('est-rate');
-  function calc(){
-    var teu=+t.value, pct=+p.value/100, rate=+r.value;
-    var spend=teu*pct*rate;
-    document.getElementById('teu-val').textContent=teu.toLocaleString();
-    document.getElementById('pct-val').textContent=p.value+'%';
-    document.getElementById('rate-val').textContent='$'+rate;
-    document.getElementById('est-spend').textContent='$'+Math.round(spend).toLocaleString();
-    document.getElementById('est-range').textContent='$'+Math.round(spend*.15).toLocaleString()+'–$'+Math.round(spend*.25).toLocaleString();
-  }
-  t.addEventListener('input',calc); p.addEventListener('input',calc); r.addEventListener('change',calc); calc();
-  document.getElementById('est-cta').addEventListener('click',function(){
-    var v=+t.value, sel=document.getElementById('teu');
-    sel.value = v<500?'Under 500' : v<2000?'500–2,000' : v<5000?'2,000–5,000' : '5,000+';
-  });
+  form.elements.company.addEventListener('input',()=>form.elements.company.setCustomValidity(''));
 })();
 </script>
 </body>
