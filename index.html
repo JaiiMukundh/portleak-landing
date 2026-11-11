@@ -353,11 +353,14 @@
     var ctrl=new AbortController(); var timer=setTimeout(function(){ctrl.abort()},8000);
     try{
       var r=await fetch('https://formsubmit.co/ajax/portleak.audit@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),signal:ctrl.signal});
-      if(!r.ok) throw new Error('formsubmit');
+      var json={}; try{json=await r.json()}catch(e){}
+      if(!r.ok || String(json.success)!=='true') throw new Error(json.message||'formsubmit');
+      success.textContent="Thanks — we've got it. We'll reply from portleak.audit@gmail.com within one business day.";
       success.style.display='block'; form.reset();
     }catch(err){
       var body='Name: '+(data.name||'')+'\nEmail: '+(data.email||'')+'\nCompany: '+(data.company||'')+'\nTEU/year: '+(data.teu||'')+'\nPorts: '+(data.ports||'');
       window.location.href='mailto:portleak.audit@gmail.com?subject='+encodeURIComponent('Free D&D audit request')+'&body='+encodeURIComponent(body);
+      success.textContent='Could not submit automatically — your email app should open. If not, email portleak.audit@gmail.com directly.';
       success.style.display='block';
     }finally{clearTimeout(timer)}
     btn.disabled=false; btn.textContent='Get my free audit';
