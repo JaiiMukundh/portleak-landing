@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request received — PortLeak</title>
+<meta name="description" content="Thanks — your PortLeak detention and demurrage audit request is in. We reply within one business day.">
+<meta name="theme-color" content="#060D18">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308111F'/%3E%3Crect x='16' y='15' width='32' height='18' rx='3' fill='none' stroke='%23F2B54C' stroke-width='2.5'/%3E%3Cpath d='M23 15v18M32 15v18M41 15v18' stroke='%23F2B54C' stroke-width='1.5' opacity='.65'/%3E%3Cpath d='M32 36c-4 5.5-6.5 8.5-6.5 11.2a6.5 6.5 0 0 0 13 0C38.5 44.5 36 41.5 32 36Z' fill='%23F2B54C'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#060D18;
+  --bg-elev:#081221;
+  --line:rgba(255,255,255,.09);
+  --line-strong:rgba(255,255,255,.17);
+  --text:#F4F6F9;
+  --text-soft:#C7D1DD;
+  --muted:#97A7BA;
+  --amber:#F2B54C;
+  --amber-bright:#FFC96F;
+  --amber-tint:rgba(242,181,76,.10);
+  --ink:#171004;
+  --success:#7BD3A8;
+  --radius-lg:22px;
+  --radius:14px;
+  --font-sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,ui-serif,serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --container:45rem;
+  --gutter:clamp(1.25rem,5vw,2.5rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;min-height:100vh;
+  display:flex;flex-direction:column;
+  background:
+    radial-gradient(60% 40% at 50% 0%,rgba(242,181,76,.09),transparent 70%),
+    var(--bg);
+  color:var(--text);
+  font-family:var(--font-sans);font-size:1rem;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--amber);color:var(--ink)}
+p,h1,h2,ul{margin:0}
+ul{padding:0;list-style:none}
+svg{display:block}
+a{color:inherit}
+.icon{
+  width:1.15em;height:1.15em;flex:none;
+  fill:none;stroke:currentColor;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:3px}
+.container{width:min(calc(100% - (var(--gutter) * 2)),var(--container));margin-inline:auto}
+
+.site-header{border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4.25rem}
+.brand{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-size:1.18rem;font-weight:700;letter-spacing:-.025em;text-decoration:none;
+}
+.brand-mark{width:2rem;height:2rem;flex:none}
+.brand-leak{color:var(--amber)}
+.back-link{
+  display:inline-flex;align-items:center;gap:.45rem;
+  color:var(--text-soft);font-size:.84rem;text-decoration:none;
+}
+.back-link .icon{width:.95rem;height:.95rem;transform:rotate(180deg)}
+.back-link:hover{color:var(--amber-bright)}
+
+main{flex:1;display:flex;align-items:center;padding-block:clamp(2.5rem,7vw,5rem)}
+.confirm{
+  position:relative;overflow:hidden;
+  padding:clamp(1.6rem,5vw,2.75rem);
+  background:linear-gradient(165deg,rgba(18,34,57,.96),rgba(7,15,27,.99));
+  border:1px solid var(--line-strong);border-radius:var(--radius-lg);
+  box-shadow:0 34px 90px -24px rgba(0,0,0,.65);
+}
+.confirm::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,201,111,.8),transparent);
+}
+.confirm-icon{
+  display:grid;place-items:center;width:3.4rem;height:3.4rem;
+  margin-bottom:1.5rem;border-radius:50%;
+  background:rgba(123,211,168,.12);border:1px solid rgba(123,211,168,.3);
+  color:var(--success);
+}
+.confirm-icon .icon{width:1.5rem;height:1.5rem;stroke-width:2.2}
+.eyebrow{
+  margin-bottom:.9rem;color:var(--amber);
+  font-family:var(--font-mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+}
+h1{
+  font-family:var(--font-display);font-weight:500;
+  font-size:clamp(2.1rem,6vw,3.1rem);line-height:1.06;
+  letter-spacing:-.03em;text-wrap:balance;
+}
+.lede{
+  max-width:34rem;margin-top:1.1rem;
+  color:var(--text-soft);font-size:1.02rem;line-height:1.7;
+}
+.next{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.next h2{
+  margin-bottom:1rem;color:var(--text-soft);
+  font-family:var(--font-mono);font-size:.67rem;font-weight:600;
+  letter-spacing:.13em;text-transform:uppercase;
+}
+.next ul{display:grid;gap:.85rem}
+.next li{display:flex;align-items:flex-start;gap:.7rem;color:var(--muted);font-size:.9rem;line-height:1.6}
+.next .step-num{
+  display:grid;place-items:center;width:1.5rem;height:1.5rem;flex:none;
+  margin-top:.1rem;border-radius:50%;
+  background:var(--amber-tint);border:1px solid rgba(242,181,76,.22);
+  color:var(--amber);font-family:var(--font-mono);font-size:.66rem;
+}
+.next strong{color:var(--text);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2.1rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:3.1rem;padding:.8rem 1.3rem;
+  border:1px solid transparent;border-radius:999px;
+  font-family:inherit;font-size:.95rem;font-weight:600;line-height:1.2;
+  text-decoration:none;white-space:nowrap;
+  transition:transform .18s ease,background-color .18s ease,border-color .18s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-amber{background:linear-gradient(180deg,var(--amber-bright),var(--amber));border-color:rgba(255,255,255,.18);color:var(--ink)}
+.btn-ghost{background:rgba(255,255,255,.025);border-color:var(--line-strong);color:var(--text)}
+.btn-ghost:hover{background:rgba(255,255,255,.065)}
+.actions .btn{flex:1 1 13rem}
+@media (min-width:560px){.actions .btn{flex:0 0 auto}}
+.fineprint{
+  margin-top:1.4rem;color:var(--muted);
+  font-family:var(--font-mono);font-size:.68rem;line-height:1.65;
+}
+.fineprint a{
+  color:var(--text-soft);text-decoration:underline;
+  text-decoration-color:rgba(242,181,76,.5);text-underline-offset:3px;
+}
+.fineprint a:hover{color:var(--amber-bright)}
+
+.site-footer{border-top:1px solid var(--line);background:#050B14}
+.footer-inner{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem;
+  padding-block:1.15rem 1.35rem;
+  color:rgba(151,167,186,.8);font-size:.72rem;line-height:1.65;
+}
+.footer-inner a{
+  color:var(--text-soft);text-decoration:underline;
+  text-decoration-color:rgba(151,167,186,.5);text-underline-offset:2px;
+}
+.footer-inner a:hover{color:var(--amber-bright);text-decoration-color:var(--amber)}
+address{font-style:normal}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="PortLeak — home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x=".75" y=".75" width="38.5" height="38.5" rx="10.5" fill="#0B1728" stroke="#2B3B52"/>
+        <rect x="9.5" y="9.5" width="21" height="12" rx="2.5" fill="none" stroke="#F2B54C" stroke-width="1.6"/>
+        <path d="M14 9.5v12M20 9.5v12M26 9.5v12" stroke="#F2B54C" stroke-width="1.2" opacity=".65"/>
+        <path d="M20 24c-2.5 3.4-4 5.3-4 7a4 4 0 0 0 8 0c0-1.7-1.5-3.6-4-7Z" fill="#F2B54C"/>
+      </svg>
+      <span>Port<span class="brand-leak">Leak</span></span>
+    </a>
+    <a class="back-link" href="index.html">
+      <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+      Back to home
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="confirm">
+      <div class="confirm-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></div>
+      <p class="eyebrow">Request received</p>
+      <h1>Your audit request is in.</h1>
+      <p class="lede">Thanks — we'll reply within one business day with next steps and a short list of what to send. If you already emailed us, no further action is needed.</p>
+
+      <div class="next">
+        <h2>What happens next</h2>
+        <ul role="list">
+          <li><span class="step-num">1</span><span><strong>We confirm scope by email.</strong> Company, TEU volume, carriers, and the audit window.</span></li>
+          <li><span class="step-num">2</span><span><strong>You send 12 months of D&amp;D invoices</strong> plus container numbers. PDFs or a spreadsheet are fine.</span></li>
+          <li><span class="step-num">3</span><span><strong>First findings in 3 business days.</strong> You approve, we dispute, and you pay 20% only on recovered dollars.</span></li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-amber" href="mailto:portleak.audit@gmail.com?subject=Free%2012-month%20D%26D%20audit">
+          <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+          Email portleak.audit@gmail.com
+        </a>
+        <a class="btn btn-ghost" href="index.html">Back to home</a>
+      </div>
+
+      <p class="fineprint">
+        No cookies, no trackers, no third-party scripts on this page.<br>
+        Landed here by mistake? Head back to the <a href="index.html">home page</a>.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <!-- PLACEHOLDER: replace with the registered business mailing address before launch. -->
+    <address>© 2026 PortLeak · MIT Manipal, Eshware Nagar · Manipal, Udupi, Karnataka 576104 · India</address>
+    <p>Unsubscribe: <a href="mailto:portleak.audit@gmail.com?subject=Unsubscribe">portleak.audit@gmail.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
